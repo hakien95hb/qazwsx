@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="kiemtra.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:kiemtra"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <AppBar>
+            <Grid>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <AppBarToggleButton x:Name="gallary" Icon="Library" Label="View Gallary" Click="AppBarButton_Click"/>
+                <AppBarSeparator/>
+                <AppBarButton Icon="Help" Label="Help" Click="AppBarButton_Click"/>
+            </StackPanel>
+            <AppBarToggleButton Icon="Clock" Label="Clock"/>
+        </Grid>
+    </AppBar>
+    <TextBlock Text=" Demo App bar " FontSize="70 " Margin=" 60" />
+        </Grid>
+</Page>
